@@ -1,0 +1,524 @@
+Intel(R) Advisor can now assist with vectorization and show optimization
+  report messages with your source code.
+See "https://software.intel.com/en-us/intel-advisor-xe" for details.
+
+
+Begin optimization report for: run<NBodySimulation<double>>(NBodySimulation<double> *, int, char **, int)
+
+    Report from: Code generation optimizations [cg]
+
+/usr/include/c++/9/bits/basic_string.h(683:32)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(684:28)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(686:20)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(687:7)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(688:7)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(689:7)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(690:7)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(677:7)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:15)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:7)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(679:7)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(683:32)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(684:28)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(686:20)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(687:7)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(688:7)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(689:7)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(690:7)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(677:7)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:15)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:7)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(679:7)::_Z3runI15NBodySimulationIdEEvPT_iPPci:  Assume directive not useful: removing
+
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(49,9) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(49,9) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+   remark #15301: SIMD LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(49,9) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+<Remainder loop for vectorization>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(49,9) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(415,9) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+   remark #25460: No loop optimizations reported
+
+   LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(417,13) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+      remark #25460: No loop optimizations reported
+
+      LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(120,9) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+         remark #25460: No loop optimizations reported
+
+         LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(131,13) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+         <Peeled loop for vectorization>
+         LOOP END
+
+         LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(131,13) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+            remark #15301: SIMD LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(131,13) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+         <Remainder loop for vectorization>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(425,9) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+   remark #25460: No loop optimizations reported
+
+   LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(164,94) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+      remark #25460: No loop optimizations reported
+
+      LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(175,13) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+      <Peeled loop for vectorization>
+      LOOP END
+
+      LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(175,13) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+         remark #15301: SIMD LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(175,13) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+      <Remainder loop for vectorization>
+      LOOP END
+
+      LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(190,13) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+      <Peeled loop for vectorization>
+      LOOP END
+
+      LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(190,13) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+         remark #15301: SIMD LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(190,13) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+      <Remainder loop for vectorization>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(61,9) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(61,9) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+      remark #15301: SIMD LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(61,9) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: NBodySimulation<double>::printParaviewSnapshot(NBodySimulation<double> *)
+
+    Report from: Code generation optimizations [cg]
+
+/usr/include/c++/9/bits/basic_string.h(683:32)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(684:28)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(686:20)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(687:7)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(688:7)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(689:7)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(690:7)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(677:7)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:15)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:7)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(679:7)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(683:32)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(684:28)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(686:20)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(687:7)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(688:7)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(689:7)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(690:7)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(677:7)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:15)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:7)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(679:7)::_ZN15NBodySimulationIdE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+===========================================================================
+
+Begin optimization report for: NBodySimulationSIMD<double, __m256d>::printParaviewSnapshot(NBodySimulationSIMD<double, __m256d> *)
+
+    Report from: Code generation optimizations [cg]
+
+/usr/include/c++/9/bits/basic_string.h(683:32)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(684:28)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(686:20)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(687:7)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(688:7)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(689:7)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(690:7)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(677:7)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:15)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:7)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(679:7)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(683:32)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(684:28)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(686:20)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(687:7)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(688:7)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(689:7)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(690:7)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(677:7)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:15)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:7)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(679:7)::_ZN19NBodySimulationSIMDId7__m256dE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+===========================================================================
+
+Begin optimization report for: NBodySimulationSIMD<double, __m256d>::setUp(NBodySimulationSIMD<double, __m256d> *, int, char **, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulationSIMD.hpp(311,9)
+   remark #25460: No loop optimizations reported
+LOOP END
+===========================================================================
+
+Begin optimization report for: run<NBodySimulation<float>>(NBodySimulation<float> *, int, char **, int)
+
+    Report from: Code generation optimizations [cg]
+
+/usr/include/c++/9/bits/basic_string.h(683:32)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(684:28)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(686:20)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(687:7)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(688:7)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(689:7)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(690:7)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(677:7)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:15)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:7)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(679:7)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(683:32)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(684:28)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(686:20)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(687:7)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(688:7)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(689:7)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(690:7)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(677:7)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:15)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:7)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(679:7)::_Z3runI15NBodySimulationIfEEvPT_iPPci:  Assume directive not useful: removing
+
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(49,9) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(49,9) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+   remark #15301: SIMD LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(49,9) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+<Remainder loop for vectorization>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(49,9) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(415,9) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+   remark #25460: No loop optimizations reported
+
+   LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(417,13) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+      remark #25460: No loop optimizations reported
+
+      LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(120,9) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+         remark #25460: No loop optimizations reported
+
+         LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(131,13) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+         <Peeled loop for vectorization>
+         LOOP END
+
+         LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(131,13) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+            remark #15301: SIMD LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(131,13) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+         <Remainder loop for vectorization>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(425,9) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+   remark #25460: No loop optimizations reported
+
+   LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(164,94) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+      remark #25460: No loop optimizations reported
+
+      LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(175,13) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+      <Peeled loop for vectorization>
+      LOOP END
+
+      LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(175,13) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+         remark #15301: SIMD LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(175,13) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+      <Remainder loop for vectorization>
+      LOOP END
+
+      LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(190,13) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+      <Peeled loop for vectorization>
+      LOOP END
+
+      LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(190,13) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+         remark #15301: SIMD LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(190,13) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+      <Remainder loop for vectorization>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(61,9) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(61,9) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+      remark #15301: SIMD LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulation.hpp(61,9) inlined into /home/pawel/dev/nbody_avx2/step3-simd.cpp(23,14)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: NBodySimulation<float>::printParaviewSnapshot(NBodySimulation<float> *)
+
+    Report from: Code generation optimizations [cg]
+
+/usr/include/c++/9/bits/basic_string.h(683:32)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(684:28)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(686:20)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(687:7)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(688:7)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(689:7)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(690:7)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(677:7)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:15)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:7)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(679:7)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(683:32)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(684:28)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(686:20)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(687:7)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(688:7)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(689:7)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(690:7)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(677:7)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:15)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:7)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(679:7)::_ZN15NBodySimulationIfE21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+===========================================================================
+
+Begin optimization report for: NBodySimulationSIMD<float, __m256>::printParaviewSnapshot(NBodySimulationSIMD<float, __m256> *)
+
+    Report from: Code generation optimizations [cg]
+
+/usr/include/c++/9/bits/basic_string.h(683:32)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(684:28)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(686:20)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(687:7)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(688:7)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(689:7)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(690:7)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(677:7)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:15)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:7)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(679:7)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(683:32)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(684:28)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(686:20)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(687:7)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(688:7)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(689:7)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(690:7)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(677:7)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:15)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(678:7)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+/usr/include/c++/9/bits/basic_string.h(679:7)::_ZN19NBodySimulationSIMDIf6__m256E21printParaviewSnapshotEv:  Assume directive not useful: removing
+
+===========================================================================
+
+Begin optimization report for: NBodySimulationSIMD<float, __m256>::setUp(NBodySimulationSIMD<float, __m256> *, int, char **, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at /home/pawel/dev/nbody_avx2/NBodySimulationSIMD.hpp(311,9)
+   remark #25460: No loop optimizations reported
+LOOP END
+===========================================================================
